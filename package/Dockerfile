@@ -11,7 +11,8 @@ RUN buildDeps="sudo build-essential libc-dev ruby-dev" \
  && gem install fluent-plugin-kafka \
  && gem install fluent-plugin-remote_syslog_tls \ 
  && gem install fluent-plugin-rewrite-tag-filter \
- && gem install fluent-plugin-prometheus \
+ && gem install fluent-plugin-prometheus \ 
+ && gem install fluent-plugin-webhdfs  \
  && gem install zookeeper \
  && sudo gem sources --clear-all \
  && SUDO_FORCE_REMOVE=yes \
