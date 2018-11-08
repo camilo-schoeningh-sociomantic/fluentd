@@ -1,4 +1,4 @@
-FROM fluent/fluentd:v1.1-debian
+FROM fluent/fluentd:stable-debian
 
 RUN buildDeps="sudo build-essential libc-dev ruby-dev" \
  && echo "gem: --no-ri --no-rdoc" >> ~/.gemrc \
